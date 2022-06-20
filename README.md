@@ -5,21 +5,21 @@ How to install PhysiCell cell simulator in windows server and run Physicell usin
 https://youtu.be/C9rEP6v_A7E
 
 **Documentation: **
-https://github.com/MathCancer/PhysiCe...
+https://github.com/MathCancer/PhysiCell/blob/master/documentation/Quickstart.md
 
 **Download Links : **
 ________________________________________________________________________
 **PhysiCell  - Download link**
-https://sourceforge.net/projects/phys...
+https://sourceforge.net/projects/physicell/files/latest/download
 
 **Msys2 related information:** 
 https://www.msys2.org/ 
 
 **Msys2 download url: **
-https://github.com/msys2/msys2-instal...
+https://github.com/msys2/msys2-installer/releases/download/2022-06-03/msys2-x86_64-20220603.exe
 
 **Anaconda ( Phython ) :**
-https://repo.anaconda.com/archive/Ana...
+https://repo.anaconda.com/archive/Anaconda3-2022.05-Windows-x86_64.exe
 
 **Install Steps : **
 
@@ -47,7 +47,7 @@ make
 
 https://packages.msys2.org/package/
 
-https://mirror.msys2.org/mingw/mingw6...
+https://mirror.msys2.org/mingw/mingw64/mingw-w64-x86_64-libxml2-2.9.14-2-any.pkg.tar.zst
 
 **Command to manual install local package**
 pacman -U  /home/Administrator/mingw-w64-x86_64-libxml2-2.9.14-2-any.pkg.tar.zst

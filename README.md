@@ -69,7 +69,8 @@ Run physicell sample project :
 Extract physicell content to a folder.  Launch a powershell or command prompt and change working directory to Physicell folder. 
 
 **Run below commands to compile and run sample project **
-$ make biorobots-sample     # copy files for biorobots 
+
+$ make biorobots-sample     #copy files for biorobots 
 $ make                      # compile
 $ ./biorobots.exe
 

@@ -71,7 +71,9 @@ Extract physicell content to a folder.  Launch a powershell or command prompt an
 **Run below commands to compile and run sample project **
 
 $ make biorobots-sample     #copy files for biorobots 
+
 $ make                      # compile
+
 $ ./biorobots.exe
 
 

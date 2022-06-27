@@ -1,0 +1,61 @@
+Documentation: 
+
+https://github.com/MathCancer/PhysiCell/blob/master/documentation/Quickstart.md
+
+
+physicell  - Download
+
+https://sourceforge.net/projects/physicell/files/latest/download
+
+
+Msys2 Download : 
+https://www.msys2.org/
+
+https://github.com/msys2/msys2-installer/releases/download/2022-06-03/msys2-x86_64-20220603.exe
+
+Run packman to install below packages automatically. 
+pacman -S 
+mingw-w64-x86_64-binutils 
+mingw-w64-x86_64-gcc 
+mingw-w64-x86_64-headers-git 
+mingw-w64-x86_64-gcc-libs 
+mingw-w64-x86_64-libwinpthread-git 
+mingw-w64-x86_64-winpthreads-git 
+mingw-w64-x86_64-lapack 
+mingw-w64-x86_64-openblas 
+mingw-w64-x86_64-libxml2 
+mingw-w64-x86_64-bzip2 
+git 
+make
+
+
+$ pacman -S mingw-w64-x86_64-binutils mingw-w64-x86_64-gcc mingw-w64-x86_64-headers-git mingw-w64-x86_64-gcc-libs mingw-w64-x86_64-libwinpthread-git mingw-w64-x86_64-winpthreads-git mingw-w64-x86_64-lapack mingw-w64-x86_64-openblas mingw-w64-x86_64-libxml2 mingw-w64-x86_64-bzip2 git make
+
+Manual download 
+
+https://packages.msys2.org/package/
+
+
+https://mirror.msys2.org/mingw/mingw64/mingw-w64-x86_64-libxml2-2.9.14-2-any.pkg.tar.zst
+
+Manual install local package
+pacman -U 
+
+
+System variables
+
+C:\msys64\mingw64\bin
+C:\msys64\usr\bin
+.\addons\libRoadrunner\roadrunner\bin
+
+Verify:
+ g++ --version
+
+Anaconda ( Phython ) 
+
+https://repo.anaconda.com/archive/Anaconda3-2022.05-Windows-x86_64.exe
+
+
+$ make biorobots-sample     # copy files for biorobots 
+$ make                      # compile
+$ ./biorobots.exe

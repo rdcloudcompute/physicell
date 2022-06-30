@@ -38,8 +38,11 @@ excecute --  /usr/sbin/update-ca-certificates
 Redhat/CentOS/Rocky:
 excecute --  update-ca-trust extract
 ~~~~~Install Phython~~~~~
+Note: install python 2.6+, version 3 is not supported. 
+sudo dnf install python2
 
-sudo dnf install python3
+Create phyton soft link ( Shortcut) 
+sudo ln -s /usr/bin/python2 /usr/bin/python
 
 ~~~~~Install HPC linux agent ~~~~~
 python setup.py -install -connectionstring:'<connection string of the cluster>' -certfile:'<path to PFX certificate>'

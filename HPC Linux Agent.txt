@@ -26,11 +26,17 @@ openssl x509 -inform PEM -in HpcHnPublicCert.cer -out HpcHnPublicCert.crt
 
 ~~~~~Copy certificate to ~~~~~
 
+Ubuntu 
 /usr/local/share/ca-certificate
 
+Redhat/CentOS/Rocky:
+/etc/pki/ca-trust/source/anchors
+
+Ubuntu 
 excecute --  /usr/sbin/update-ca-certificates
 
-
+Redhat/CentOS/Rocky:
+excecute --  update-ca-trust extract
 ~~~~~Install Phython~~~~~
 
 sudo dnf install python3

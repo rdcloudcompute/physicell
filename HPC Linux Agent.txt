@@ -1,0 +1,39 @@
+~~~~~Linux HPC agent fileshare~~~~~
+ 
+Copy contets fof LinuxNodeAgent folder from REMINST for to a new folder (smbshare)  and share it with Everyone read/Write access. 
+
+
+\\<Headnode Name>\REMINST\LinuxNodeAgent
+\\HPC01\REMINST\LinuxNodeAgent
+
+~~~~~CIFS-UTILS install~~~~~
+
+Redhat/CentOS/Rocky:
+yum install cifs-utils
+
+Ubuntu:
+sudo apt install -y cifs-utils
+
+~~~~~Mount SMB Share~~~~~
+
+mkdir –p /smbshare  
+
+mount -t cifs //HPC01/SmbShare /smbshare -o vers=2.1,domain=rdcc.local,username=Administrator,password='<password>',dir_mode=0777,file_mode=0777
+
+~~~~~Covert .CER to .CRT ~~~~~
+
+openssl x509 -inform PEM -in HpcHnPublicCert.cer -out HpcHnPublicCert.crt
+
+~~~~~Copy certificate to ~~~~~
+
+/usr/local/share/ca-certificate
+
+excecute --  /usr/sbin/update-ca-certificates
+
+
+~~~~~Install Phython~~~~~
+
+sudo dnf install python3
+
+~~~~~Install HPC linux agent ~~~~~
+python setup.py -install -connectionstring:'<connection string of the cluster>' -certfile:'<path to PFX certificate>'

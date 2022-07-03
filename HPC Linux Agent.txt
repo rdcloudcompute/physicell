@@ -1,6 +1,6 @@
 ~~~~~Linux HPC agent fileshare~~~~~
  
-Copy contets fof LinuxNodeAgent folder from REMINST for to a new folder (smbshare)  and share it with Everyone read/Write access. 
+Copy contents of LinuxNodeAgent folder from REMINST for to a new folder (smbshare)  and share it with Everyone read/Write access. 
 
 
 \\<Headnode Name>\REMINST\LinuxNodeAgent
